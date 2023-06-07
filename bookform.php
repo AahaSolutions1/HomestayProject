@@ -3,8 +3,9 @@
     <head>
         <title>HOMEPAGE</title>
     </head>
-    <?php include 'nav.php';?>
+   
     <body>
+    <?php include 'nav.php';?>
     <form name="myForm" action="success.html" method="post" autocomplete="on">
         <h1>BOOKING FORM</h1>
         <div>
@@ -46,8 +47,6 @@
             margin-left: 100px;
             margin-right: 100px; 
             size:100px;
-        }
-        form{
             font-size: smaller;
         }
         a{
@@ -84,11 +83,11 @@
             background-color:rgb(152, 111, 234);   
         }
         @media screen and (max-width: 1100px) {
-            body{
+            form{
                 font-size: 25px;
                 margin-bottom: 0%;
                 height:100%;
-                margin-top: 200px;
+                margin-top: 50px;
             }
             div{
                 font-size: 30px;
