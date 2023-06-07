@@ -3,6 +3,7 @@
     <head>
         <title>HOMEPAGE</title>
     </head>
+    <?php include 'nav.php';?>
     <body>
     <form name="myForm" action="success.html" method="post" autocomplete="on">
         <h1>BOOKING FORM</h1>
@@ -136,6 +137,7 @@
            }
             }
     </script>
+    <?php include 'footer.php';?>
     </html>
      <?php
               if(isset($_POST['name']))
