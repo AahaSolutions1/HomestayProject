@@ -25,10 +25,10 @@ img.ab{
 .text {
     
     color:rgb(243, 246, 242);
-    /* background-color: rgba(0, 14, 4, 0.5); */
+    background-color: rgba(0, 14, 4, 0.5);
     font-weight:bold;
-    /* position:absolute; */
-    /* width:80%; */
+    position:absolute;
+    width:80%;
     text-align:center;
     margin-top:-800px;
     padding-left: 130px;
@@ -61,7 +61,6 @@ img.ab{
 {
     width: 100%;
     background-image:url("./images/home.png");
-    background-color: rgba(0, 0, 0, 0.3);
     background-repeat: no-repeat;  
     background-position: center;
     background-size: cover;
