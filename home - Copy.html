@@ -2,13 +2,53 @@
 <html>
    <title>HOMESTAY</title>    
    <head>
-    <link rel="stylesheet" href="./card1.css">
-    <meta name="viewport" content="width-device-width",initial-scale="1.0"> 
+    <link rel="stylesheet" href="./card1.css"> 
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <meta name="viewport" content="width-device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head> 
-   <?php include 'nav.php';?>
    <body>
-        <div class="image"> </div>
-         <div class=" text">
+
+      <div class="nav" id="topnav">
+         <div class="nav-image">
+           <div class="logo">
+             <img src="logo.jpg" height="50px">
+             <p> HOME STAY </p>
+           </div>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+           </a>
+         </div>
+     
+         <ul>
+     
+           <li> <a href="" target="_self">Home</a></li>
+     
+           <li> <a href="bookform.html">Bookings</a>
+           </li>
+           <li> <a href="jega.html">Prices</a>
+           </li>
+           <li><a href="">Gallery</a>
+           </li>
+           <li> <a href="">Contact us</a>
+           </li>
+     
+           <li> <a href="admin.html">Admin</a></li>
+           
+         </ul>
+       </div>
+       <script>
+         function myFunction() {
+           var x = document.getElementById("topnav");
+           if (x.className === "nav") {
+             x.className += " responsive";
+           } else {
+             x.className = "nav";
+           }
+         }
+       </script> 
+         <div  id="image" class=" text">
+          <div class="color">
             <h1 >AHAA HOMESTAY</h1>
             <h2> We offering budject rooms with free wifi connectivity, provides in-room amenities
                  like television, refrigerator, cooking facolities and attache washroom with hot and cold 
@@ -16,6 +56,7 @@
                  services provident at the property.
             </h2>
             <button onClick="purple.jpg">BOOK NOW</button>
+          </div>
         </div>
         <header>OUR SERVICES</header>  
         <div class="row"> 
@@ -56,6 +97,16 @@
              <h1>DIRECTIONS</h1>
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.5104251154225!2d79.81646407471605!3d11.939120788289298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361dbf534598f%3A0x2d815c04371738ad!2sAAHA%20Solutions!5e0!3m2!1sen!2sin!4v1685946258357!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
          </div>
+         <footer>
+            <p>
+              YYY HOMESTAY <br>
+              10th street,KC Nagar,<br>
+              Pondicherry 605005,India <br>
+              Phone: +91-975612340 <br>
+              WhatsApp: +91-7609123741
+            </p>
+          </footer>
+   
          </body>
-         <?php include 'footer.php';?>
+
 </html>
