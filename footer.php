@@ -3,6 +3,8 @@
         <style>
             footer{
       margin-top:20%;
+      margin-left: 0%;
+      margin-right:0%;
       background-color: palevioletred;
       text-align: center;
       color: paleturquoise
