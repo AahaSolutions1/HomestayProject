@@ -49,9 +49,7 @@
             size:100px;
             font-size: smaller;
         }
-        a{
-            text-decoration: none;
-        }
+        
         h1{
             text-align: center;
             color: rgb(65, 30, 74);
