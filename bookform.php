@@ -37,15 +37,14 @@
     </form>
     </body>
     <style>
-        body{
+        form{
             border-style:ridge;
             border-color: rgb(200, 111, 207); 
             border-width: 5px;
             /* box-shadow: 10px 10px rgb(186, 137, 238); */
             margin-top: 50px;
             margin-left: 100px;
-            margin-right: 100px;
-            margin-bottom: 100px;
+            margin-right: 100px; 
             size:100px;
         }
         form{
