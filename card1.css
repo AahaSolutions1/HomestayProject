@@ -1,4 +1,8 @@
-       
+    footer{
+      background-color: palevioletred;
+      text-align: center;
+      color: paleturquoise
+    }       
 img.ab{
    width: 250px;
   margin-right:20px;
@@ -26,7 +30,6 @@ img.ab{
     
     color:rgb(243, 246, 242);
     background-color: rgba(0, 14, 4, 0.5);
-    font-weight:bold;
     position:absolute;
     width:80%;
     text-align:center;
@@ -83,6 +86,46 @@ h3
     margin-top:-80px;
     padding-left:100px;
 }
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: palevioletred;
+    align-items: center;
+  }
+
+  .nav ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    display: flex;
+
+  }
+  button {
+    background-color: paleturquoise;
+    font-size: 25px;
+  }
+.nav li a {
+    color: paleturquoise;
+    text-align: center;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  .nav li a:hover {
+    text-decoration: underline;
+  }
+.logo {
+    display: flex;
+  }
+
+ 
+  a.icon {
+    display: none;
+  }
+  
 
 @keyframes fade {
       0%
@@ -122,4 +165,40 @@ h3
    .text button{
         margin-bottom:250px;
    }
+   .nav {
+    display: block;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  a.icon {
+    display: block;
+    font-size: xx-large;
+    color: paleturquoise;
+  }
+   .nav-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav.responsive {
+    position: relative;
+  }
+
+  .nav.responsive ul li a {
+    display: block;
+    font-size: 25px;
+    padding: 20px;
+
+  }
+
+  .nav.responsive ul {
+    display: block;
+  }
+
 } 
+
+
