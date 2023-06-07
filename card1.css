@@ -25,10 +25,10 @@ img.ab{
 .text {
     
     color:rgb(243, 246, 242);
-    background-color: rgba(0, 14, 4, 0.5);
+    /* background-color: rgba(0, 14, 4, 0.5); */
     font-weight:bold;
-    position:absolute;
-    width:80%;
+    /* position:absolute; */
+    /* width:80%; */
     text-align:center;
     margin-top:-800px;
     padding-left: 130px;
@@ -59,12 +59,18 @@ img.ab{
 }
 .image
 {
-    display:flex;
-    background-image:url("home.png");
+    width: 100%;
+    background-image:url("./images/home.png");
+    background-color: rgba(0, 0, 0, 0.3);
     background-repeat: no-repeat;  
     background-position: center;
     background-size: cover;
-    height:800px;  
+    height:800px;
+    animation-name:fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+    animation-direction: alternate;  
 }
 header{
     padding-top: 50px; 
@@ -79,35 +85,25 @@ h3
     padding-left:100px;
 }
 
-
- .image
-{
-    animation-name:fade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 25s;
-    animation-direction: alternate;
-    filter:blur(2px);
-} 
 @keyframes fade {
       0%
       {
-        background-image: url("home1.png");
+        background-image: url("./images/home1.png");
         
       }
       25%
       {
-        background-image: url("home2.png");
+        background-image: url("./images/home2.png");
       
       }
       75%
       {
-        background-image: url("home3.png");
+        background-image: url("./images/home3.png");
 
       }
       100%
       {
-        background-image: url("home2.png");
+        background-image: url("./images/home2.png");
       }
 
 }  
