@@ -6,12 +6,13 @@
    <head>
     <link rel="stylesheet" href="./card1.css">
     <meta name="viewport" content="width-device-width",initial-scale="1.0"> 
-   </head>
+   </head> 
+   <?php include 'nav.php';?>
    <body>
         <div class="image"> </div>
          <div class=" text">
             <h1 >AHAA HOMESTAY</h1>
-            <h2>We offering budject rooms with free wifi connectivity, provides in-room amenities
+            <h2> We offering budject rooms with free wifi connectivity, provides in-room amenities
                  like television, refrigerator, cooking facolities and attache washroom with hot and cold 
                  running water supply, laundry, cab rental, medical assistance and room service are addtional
                  services provident at the property.
