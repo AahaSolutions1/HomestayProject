@@ -51,13 +51,7 @@ body
       display: flex;
     }
 
-    footer{
-      margin-top: auto;
-      background-color: palevioletred;
-      text-align: center;
-      color: paleturquoise
-    }
-
+  
     a.icon {
       display: none;
     }

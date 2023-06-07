@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-   <title>HOMESTAY</title>    
+<?php include 'nav.php';?>
+   <title>HOMESTAY</title>  
+     
    <head>
     <link rel="stylesheet" href="./card1.css">
     <meta name="viewport" content="width-device-width",initial-scale="1.0"> 
@@ -56,4 +58,5 @@
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.5104251154225!2d79.81646407471605!3d11.939120788289298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361dbf534598f%3A0x2d815c04371738ad!2sAAHA%20Solutions!5e0!3m2!1sen!2sin!4v1685946258357!5m2!1sen!2sin" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
          </div>
          </body>
+         <?php include 'footer.php';?>
 </html>

@@ -2,7 +2,7 @@
     <head>
         <style>
             footer{
-      margin-top:30%;
+      margin-top:20%;
       background-color: palevioletred;
       text-align: center;
       color: paleturquoise
