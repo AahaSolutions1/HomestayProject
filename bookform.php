@@ -86,6 +86,8 @@
                 margin-bottom: 0%;
                 height:100%;
                 margin-top: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
             }
             div{
                 font-size: 30px;
