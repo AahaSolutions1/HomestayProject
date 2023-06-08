@@ -9,6 +9,7 @@
 </head>
 
 <body>
+<?php include 'nav.php';?>
   <main id="main-holder">
     <h1 id="login-header">ADMIN</h1>
     
@@ -25,6 +26,7 @@
     </form>
   
   </main>
+  <?php include 'footer.php';?>
 </body>
 
 </html>
