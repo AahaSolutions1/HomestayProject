@@ -105,7 +105,6 @@
             button{
                width:98%;
                display:block; 
-               font-size: larger;
             }
             h1{
                 font-size: 30px;
