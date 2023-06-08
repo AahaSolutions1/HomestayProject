@@ -52,7 +52,9 @@
             size:100px;
             font-size: smaller;
         }
-       
+
+        
+
         h1{
             text-align: center;
             color: rgb(65, 30, 74);
@@ -89,6 +91,8 @@
                 margin-bottom: 0%;
                 height:100%;
                 margin-top: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
             }
             .bform{
                 font-size: 30px;
