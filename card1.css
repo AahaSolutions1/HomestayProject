@@ -161,10 +161,15 @@ h3
 @media screen and (max-width: 1020px){
 .color{
   height:400px;
-  width:78%;
-  padding-left:110px;
-  padding-right: 90px;
- 
+  width:747px;
+  /* padding-left:100px; */
+  /* padding-right: 90px; */
+  position:relative;
+  /* padding-top:200px; */
+  top:-100px;
+  left: -120px;
+  /* right:-300px; */
+  bottom:300px;
 }
     .map iframe 
     {
