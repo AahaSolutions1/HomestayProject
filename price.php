@@ -72,7 +72,7 @@
         <b> Peak Season: Rs.12,000/night </b><br>
         Peak Season <br>
         May 01 - June 05 and Dec 15 - Jan 05 <br>
-        <button><a href="bookform.php">BOOK NOW</a></button>
+       <form action="bookform.php"><button>BOOK NOW</button></form>
     </div>
 
 </body>
