@@ -3,7 +3,9 @@
     <head>
         <title>HOMEPAGE</title>
     </head>
+   
     <body>
+    <?php include 'nav.php';?>
     <form name="myForm" action="success.html" method="post" autocomplete="on">
         <h1>BOOKING FORM</h1>
         <div>
@@ -36,23 +38,18 @@
     </form>
     </body>
     <style>
-        body{
+        form{
             border-style:ridge;
             border-color: rgb(200, 111, 207); 
             border-width: 5px;
             /* box-shadow: 10px 10px rgb(186, 137, 238); */
             margin-top: 50px;
             margin-left: 100px;
-            margin-right: 100px;
-            margin-bottom: 100px;
+            margin-right: 100px; 
             size:100px;
-        }
-        form{
             font-size: smaller;
         }
-        a{
-            text-decoration: none;
-        }
+        
         h1{
             text-align: center;
             color: rgb(65, 30, 74);
@@ -84,11 +81,13 @@
             background-color:rgb(152, 111, 234);   
         }
         @media screen and (max-width: 1100px) {
-            body{
+            form{
                 font-size: 25px;
                 margin-bottom: 0%;
                 height:100%;
-                margin-top: 200px;
+                margin-top: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
             }
             div{
                 font-size: 30px;
@@ -136,6 +135,7 @@
            }
             }
     </script>
+    <?php include 'footer.php';?>
     </html>
      <?php
               if(isset($_POST['name']))
