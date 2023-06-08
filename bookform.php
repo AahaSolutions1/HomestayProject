@@ -43,7 +43,7 @@
     <style>
         form{
             border-style:ridge;
-            border-color: rgb(200, 111, 207); 
+            border-color: palevioletred; 
             border-width: 5px;
             /* box-shadow: 10px 10px rgb(186, 137, 238); */
             margin-top: 50px;
@@ -74,7 +74,7 @@
             margin: auto;
             font-size: xx-large;
             color: rgb(61, 38, 82);
-            background-color:rgb(177, 146, 238);
+            background-color:palevioletred;
             width:98%;
             height: 65px;
             display: block; 
@@ -83,7 +83,8 @@
             cursor:pointer;     
         }
         button:hover{
-            background-color:rgb(152, 111, 234);   
+            background-color:palevioletred;
+
         }
         @media screen and (max-width: 768px) {
             form{

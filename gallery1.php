@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+    <?php include 'nav.php'; ?>
+
+    <head>
     <title>GALLERY</title>
     <style>
-        img{
+        .photo img{
+             transition: transform .3s; 
             height:300px;
             width:300px;
             margin-left:20px;
@@ -10,14 +14,19 @@
             margin-bottom:20px;
             margin-top:20px;
         }
+        .photo img:hover{
+            transform:scale(2.5);
+        } 
+     .photo{
+            margin-left:50px;
+        }
         h1{
             text-align: center;
             font-weight: bolder;
         }
-        div{
-            margin-left:50px;
-        }
-        @media screen and (max-width:1000px) {
+        
+
+        @media screen and (max-width:768px) {
           body{
             margin-left:90px;
 
@@ -28,8 +37,8 @@
     
     <body>
         <h1>GALLERY</h1>
-        <div>
-            <img src="images\ac.png">
+        <div class="photo">
+            <img  src="images\ac.png">
             <img src="images\home.png">
             <img src="images\home1.png">
             <img src="images\home2.png">
@@ -40,6 +49,16 @@
             <img src="images\family.png">
             <img src="images\airport.png">
         </div>
+      </body>
+      <?php include 'footer.php'; ?>
 
-    </body>
-</html>
+      </html>
+
+        
+            
+    
+            
+           
+           
+            
+          
