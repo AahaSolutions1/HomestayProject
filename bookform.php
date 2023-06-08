@@ -9,7 +9,7 @@
    
     <body>
    
-    <form name="myForm" action="success.html" method="post" autocomplete="on">
+    <form name="myForm" action="data.txt" method="post" autocomplete="on">
         <h1>BOOKING FORM</h1>
         <div class="bform">
         <label for="name">Name</label>
@@ -30,11 +30,11 @@
         <br/>
         <label for="checkin">Check-in date</label>
         <br/>
-        <input type="date" id="checkin" name="checkin" required>
+        <input type="text" id="checkin" name="checkin" required>
         <br/>
         <label for="checkout">Check-out date</label>
         <br/>
-        <input type="date" id="checkout" name="checkout" required>
+        <input type="text" id="checkout" name="checkout" required>
         <br/>
         </div>
         <button id="bt" onclick="message()"> BOOK</button><br/>    
@@ -83,7 +83,7 @@
             cursor:pointer;     
         }
         button:hover{
-            background-color:palevioletred;
+            background-color: rgb(252,116,161);
 
         }
         @media screen and (max-width: 768px) {
@@ -105,7 +105,9 @@
             button{
                width:98%;
                display:block; 
-               font-size: larger;
+            }
+            h1{
+                font-size: 30px;
             }
         }
     </style>
@@ -141,6 +143,20 @@
            }
             }
     </script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+    $( "#checkin" ).datepicker();
+  } );
+  </script>
+  <script>
+    $( function() {
+    $( "#checkout" ).datepicker();
+  } );
+  </script>
     <?php include 'footer.php';?>
     </html>
      <?php
