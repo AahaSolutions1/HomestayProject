@@ -65,9 +65,9 @@ img.ab{
   padding-right:100px;
   /* justify-content: center; */
   position: absolute;
-  left: 6px;
-  top:58px;
-  width:85%;
+  left: 0px;
+  top:49px;
+  width:85.5%;
   /* bottom:50px; */
   /* padding-bottom: 80px; */
 }
@@ -104,6 +104,9 @@ h3
     align-items: center;
   }
 
+  body{
+    margin:0px;
+  }
   .nav ul {
     list-style-type: none;
     margin: 0%;
@@ -161,7 +164,7 @@ h3
 @media screen and (max-width: 1020px){
 .color{
   height:400px;
-  width:747px;
+  width:761px;
   /* padding-left:100px; */
   /* padding-right: 90px; */
   position:relative;
