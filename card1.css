@@ -158,10 +158,6 @@ h3
       }
 
 }  
-<<<<<<< HEAD
-@media screen and (max-width: 780px){
-
-=======
 @media screen and (max-width: 1020px){
 .color{
   height:400px;
@@ -175,7 +171,6 @@ h3
   /* right:-300px; */
   bottom:300px;
 }
->>>>>>> c275e306b2b692c7398292f1949975b874bbb0b3
     .map iframe 
     {
        margin-left:30px;
