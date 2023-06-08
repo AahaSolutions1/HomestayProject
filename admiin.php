@@ -13,7 +13,7 @@
              margin-top:200px;
              border-radius: 10px;
              padding-bottom: 20px;
-             border:4px solid rgb(16, 16, 16)
+             border:3px solid rgb(16, 16, 16)
          }
          h1{
            font-weight: bolder;
