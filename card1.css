@@ -1,4 +1,8 @@
-       
+    footer{
+      background-color: palevioletred;
+      text-align: center;
+      color: paleturquoise
+    }       
 img.ab{
    width: 250px;
   margin-right:20px;
@@ -7,7 +11,7 @@ img.ab{
   margin-top: 50px; 
   border: 20px solid white; 
   border-bottom-width: 70px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
 }
 .row {
     display:flex;
@@ -25,25 +29,20 @@ img.ab{
 .text {
     
     color:rgb(243, 246, 242);
-    background-color: rgba(0, 14, 4, 0.5);
-    font-weight:bold;
-    position:absolute;
-    width:80%;
     text-align:center;
-    margin-top:-800px;
-    padding-left: 130px;
+    padding-left: 100px;
     text-decoration-style:double;
+    /* justify-content: center; */
     padding-top:280px;
-    padding-right:155px;
+    padding-right:170px;
 }
 
 .text button{
  background-color: darkseagreen;
  font-size: 30px;
- margin-bottom: 300px;
 }
 .map{
-     background-color: rgba(0, 0, 0, 0.3);
+     background-color: rgba(0, 0, 0, 0.2);
 }
 .map h1{
     padding-top:10px;
@@ -57,19 +56,33 @@ img.ab{
     display:flex;
     flex-wrap:wrap;
 }
-.image
+.color{
+  background-color: rgba(0, 0, 0, 0.5);
+  width:100%;
+  padding-top: 100px;
+  height:580px;
+  padding-left: 118px;
+  padding-right:100px;
+  /* justify-content: center; */
+  position: absolute;
+  left: 6px;
+  top:58px;
+  width:85%;
+  /* bottom:50px; */
+  /* padding-bottom: 80px; */
+}
+#image
 {
-    width: 100%;
-    background-image:url("./images/home.png");
+    background-image:url("./images/home.png"); 
     background-repeat: no-repeat;  
     background-position: center;
     background-size: cover;
-    height:800px;
+    height:400px;
     animation-name:fade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 25s;
-    animation-direction: alternate;  
+    animation-direction: alternate; 
 }
 header{
     padding-top: 50px; 
@@ -83,12 +96,51 @@ h3
     margin-top:-80px;
     padding-left:100px;
 }
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: palevioletred;
+    align-items: center;
+  }
+
+  .nav ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    display: flex;
+
+  }
+  button {
+    background-color: paleturquoise;
+    font-size: 25px;
+  }
+.nav li a {
+    color: paleturquoise;
+    text-align: center;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+
+  .nav li a:hover {
+    text-decoration: underline;
+  }
+.logo {
+    display: flex;
+  }
+
+ 
+  a.icon {
+    display: none;
+  }
+  
 
 @keyframes fade {
       0%
       {
         background-image: url("./images/home1.png");
-        
       }
       25%
       {
@@ -106,8 +158,24 @@ h3
       }
 
 }  
+<<<<<<< HEAD
 @media screen and (max-width: 780px){
 
+=======
+@media screen and (max-width: 1020px){
+.color{
+  height:400px;
+  width:747px;
+  /* padding-left:100px; */
+  /* padding-right: 90px; */
+  position:relative;
+  /* padding-top:200px; */
+  top:-100px;
+  left: -120px;
+  /* right:-300px; */
+  bottom:300px;
+}
+>>>>>>> c275e306b2b692c7398292f1949975b874bbb0b3
     .map iframe 
     {
        margin-left:30px;
@@ -118,8 +186,46 @@ h3
     }   
    .text{
     width:70%;
+    padding-left:120px;
+    padding-top:100px;
    } 
    .text button{
         margin-bottom:250px;
    }
+   .nav {
+    display: block;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  a.icon {
+    display: block;
+    font-size: xx-large;
+    color: paleturquoise;
+  }
+   .nav-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav.responsive {
+    position: relative;
+  }
+
+  .nav.responsive ul li a {
+    display: block;
+    font-size: 25px;
+    padding: 20px;
+
+  }
+
+  .nav.responsive ul {
+    display: block;
+  }
+
 } 
+
+
