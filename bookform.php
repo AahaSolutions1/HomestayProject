@@ -83,7 +83,7 @@
             cursor:pointer;     
         }
         button:hover{
-            background-color:palevioletred;
+            background-color: rgb(252,116,161);
 
         }
         @media screen and (max-width: 768px) {
@@ -106,6 +106,9 @@
                width:98%;
                display:block; 
                font-size: larger;
+            }
+            h1{
+                font-size: 30px;
             }
         }
     </style>
