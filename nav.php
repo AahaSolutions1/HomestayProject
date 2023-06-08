@@ -112,7 +112,7 @@
 
     <ul>
 
-      <li> <a href="homepage.php" >Home</a></li>
+      <li> <a href="firstpage.html" >Home</a></li>
 
       <li> <a href="bookform.php">Book</a>
       </li>
