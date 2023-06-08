@@ -118,7 +118,7 @@
       </li>
       <li> <a href="price.php">Prices</a>
       </li>
-      <li><a href="">Gallery</a>
+      <li><a href="gallery1.php">Gallery</a>
       </li>
       <li> <a href="contact.php">Contact us</a>
       </li>
