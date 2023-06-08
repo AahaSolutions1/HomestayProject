@@ -8,17 +8,16 @@
   <meta name="viewport" content="width=device-width, user-scalable=no,
    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <style>
-    button {
+    /* button {
       background-color: paleturquoise;
       font-size: 25px;
-    }
+    } */
 body
 {
   margin-top: 0%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 }
     .nav {
       display: flex;
