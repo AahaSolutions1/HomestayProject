@@ -43,6 +43,7 @@
          }
     </style>
     <body>
+    <?php include 'nav.php'; ?>
         <div class="box">
             <h1>ADMIN LOGIN</h1>
              <h4>Enter your details to get sign in to your account</h4>
@@ -52,5 +53,6 @@
              <br></br>
              <button >login</button>
             </div>
+            <?php include 'footer.php';?>
     </body>
 </html>
