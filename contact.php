@@ -59,7 +59,7 @@
             button{
                     font-size:xx-small;
                     text-align: center;
-                    padding: 10px;
+                    padding: 5px;
             }
         }
         </style>
