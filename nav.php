@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head> 
+  
   
   <link rel="icon" href="logo.jpg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, user-scalable=no,
    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <style>
-    /* button {
-      background-color: paleturquoise;
-      font-size: 25px;
-    } */
-body
+
+   <style>
+   
+.bar
+
 {
   margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -56,7 +58,7 @@ body
     }
     
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 768px) {
       .nav {
         display: block;
       }
@@ -71,7 +73,7 @@ body
         font-size: xx-large;
         color: paleturquoise;
       }
-       .image {
+       .hel {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -93,12 +95,12 @@ body
       }
 
     }
-  </style>
+  </style> 
 </head>
 
-<body>
+<body class=bar>
   <div class="nav" id="topnav">
-    <div class="image">
+    <div class="hel">
       <div class="logo">
         <img src="logo.jpg" height="50px">
         <p> HOME STAY </p>
@@ -110,31 +112,22 @@ body
 
     <ul>
 
-      <li> <a href="" target="_self">Home</a></li>
+      <li> <a href="homepage.php" >Home</a></li>
 
-      <li> <a href="bookform.html">Bookings</a>
+      <li> <a href="bookform.php">Book</a>
       </li>
-      <li> <a href="jega.html">Prices</a>
+      <li> <a href="price.php">Prices</a>
       </li>
       <li><a href="">Gallery</a>
       </li>
-      <li> <a href="">Contact us</a>
+      <li> <a href="contact.php">Contact us</a>
       </li>
 
-      <li> <a href="admin.html">Admin</a></li>
+      <li> <a href="">Admin</a></li>
       
     </ul>
   </div>
-  <!-- <footer>
-    <p>
-      YYY HOMESTAY <br>
-      10th street,KC Nagar,<br>
-      Pondicherry 605005,India <br>
-      Phone: +91-975612340 <br>
-      WhatsApp: +91-7609123741
-    </p>
-  </footer>-->
-
+  
   <script>
     function myFunction() {
       var x = document.getElementById("topnav");
