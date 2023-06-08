@@ -1,5 +1,5 @@
 body{
-  background-color: #c8d6e5;
+  background-color: white;
 }
 #main-holder{
    margin: 30px;
@@ -33,7 +33,7 @@ h4{
 }
 #login-error-msg{
   opacity:0;
-  color:red;
+  color:rgb(15, 2, 2);
   
 }
 @media screen and (max-width:1200px) {
