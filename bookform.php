@@ -1,14 +1,17 @@
+<?php include 'nav.php';?>
 <!DOCTYPE html>
 <html>
+
     <head>
+        
         <title>HOMEPAGE</title>
     </head>
    
     <body>
-    <?php include 'nav.php';?>
+   
     <form name="myForm" action="success.html" method="post" autocomplete="on">
         <h1>BOOKING FORM</h1>
-        <div>
+        <div class="bform">
         <label for="name">Name</label>
         <br/>
         <input type="text" id="name" name="name"  placeholder="Enter Name" required>
@@ -49,19 +52,17 @@
             size:100px;
             font-size: smaller;
         }
-        a{
-            text-decoration: none;
-        }
+       
         h1{
             text-align: center;
             color: rgb(65, 30, 74);
         }
-        div{
+        .bform {
             text-align: left;
             font-size: large;
             margin: 20px;          
         }
-        div input{
+        .bform input{
             width: 95%;
             font-size: larger;
             padding: 10px;
@@ -82,17 +83,17 @@
         button:hover{
             background-color:rgb(152, 111, 234);   
         }
-        @media screen and (max-width: 1100px) {
+        @media screen and (max-width: 768px) {
             form{
-                font-size: 25px;
+                font-size: 10px;
                 margin-bottom: 0%;
                 height:100%;
                 margin-top: 50px;
             }
-            div{
+            .bform{
                 font-size: 30px;
             }
-            div input{
+            .bform input{
                 font-size: 30px;
             
             }

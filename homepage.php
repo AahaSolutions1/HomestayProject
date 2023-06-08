@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./card1.css">
     <meta name="viewport" content="width-device-width",initial-scale="1.0"> 
    </head> 
-   <?php include 'nav.php';?>
+   
    <body>
-        <div class="image"> </div>
+         <div class="image"> </div> 
          <div class=" text">
             <h1 >AHAA HOMESTAY</h1>
             <h2> We offering budject rooms with free wifi connectivity, provides in-room amenities
