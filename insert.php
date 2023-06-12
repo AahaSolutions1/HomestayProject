@@ -21,6 +21,7 @@
         }
 
         // Taking all 6 values from the form data(input)
+       
         $name = $_REQUEST['name'];
         $phnumber = $_REQUEST['phnumber'];
         $email = $_REQUEST['email'];
@@ -29,7 +30,7 @@
         $checkout = $_REQUEST['checkout'];
 
         // We are going to insert the data into our sampleDB table
-        $sql = "INSERT INTO bookingdetails VALUES ('$name',
+        $sql = "INSERT INTO bookingdetails VALUES ('','$name',
             '$phnumber','$email','$aadharno','$checkin','$checkout')";
 
         // Check if the query is successful
