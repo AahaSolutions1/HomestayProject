@@ -67,7 +67,7 @@
   <body>
     <div class="container">
     <div class="popup" id="popup">
-      <img src="tick-img1 (2).png">
+      <img src="tick-img.png">
       <h1>Success</h1>
       <p>Your booking is successful</p>
       <a href="bookform.php">
