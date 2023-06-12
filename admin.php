@@ -18,10 +18,11 @@
              border-radius: 10px;
              padding-bottom: 20px;
              border:9px solid palevioletred;
+             box-shadow: 0 2px 5px;
          }
          h1{
            font-weight: bolder;
-           font-family:sans-serif;
+           font-family:georgia;
          }
          h4{
             color:azure
@@ -162,7 +163,7 @@
              <br></br>
              <input id="font" type="password" placeholder="Password">
              <br></br>
-             <button >login</button>
+             <button id="font" >login</button>
             </div>
             <?php include 'footer.php';?>
        
