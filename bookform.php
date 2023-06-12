@@ -86,21 +86,20 @@
 
         }
         @media screen and (max-width: 768px) {
-            form{
+            .myForm{
                 font-size: 10px;
                 margin-bottom: 0%;
                 height:100%;
                 margin-top: 50px;
-                margin-left: 50px;
-                margin-right: 50px;
-                padding-right:40px;
-                padding-left: 40px;
+                margin-left: 10px;
+                margin-right: 10px;
+                
             }
             .bform{
                 font-size: 20px;
             }
             .bform input{
-                font-size: 15px;
+                font-size: 20px;
             
             }
             button{
@@ -162,62 +161,4 @@
    
     <?php include 'footer.php';?>
     </html>
-     <?php
-              if(isset($_POST['name']))
-              {
-              $data=$_POST['name'];
-              $fp = fopen('data.txt', 'a');
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              ?> <br/>
-              <?php
-              if(isset($_POST['phnumber']))
-              {
-              $data=$_POST['phnumber'];
-              
-              $fp = fopen('data.txt', 'a');
-              
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              if(isset($_POST['email']))
-              {
-              $data=$_POST['email'];
-              
-              $fp = fopen('data.txt', 'a');
-              
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              if(isset($_POST['aadharno']))
-              {
-              $data=$_POST['aadharno'];
-              
-              $fp = fopen('data.txt', 'a');
-              
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              if(isset($_POST['checkin']))
-              {
-              $data=$_POST['checkin'];
-              
-              $fp = fopen('data.txt', 'a');
-              
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              if(isset($_POST['checkout']))
-              {
-              $data=$_POST['checkout'];
-              
-              $fp = fopen('data.txt', 'a');
-              
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              ?>
-    
-
-    
+     
