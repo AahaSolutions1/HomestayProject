@@ -9,39 +9,39 @@
    
     <body>
    
-    <form name="myForm" action="success.html" method="post" autocomplete="on">
+    <form name="myForm" class="myForm" action="insert.php" method="post" autocomplete="on">
         <h1>BOOKING FORM</h1>
         <div class="bform">
         <label for="name">Name</label>
         <br/>
         <input type="text" id="name" name="name"  placeholder="Enter Name" required>
         <br/>
-        <label for="phnumber">Phone number</label>
+        <label for="phnumber">Phone Number</label>
         <br/>
-        <input type="text" id="phnumber" name="phnumber" placeholder="Enter number" required>
+        <input type="text" id="phnumber" name="phnumber"  pattern="[0-9]{10}" placeholder="Enter Number" required>
         </br>
         <label for="email">E-mail</label>
         <br/>
         <input type="email" id="email" name="email" placeholder="Enter E-mail" required>
         <br/>
-        <label for="aadharno">Aadhar number</label>
+        <label for="aadharno">Aadhar Number</label>
         <br/>
         <input type="text" id="aadharno" name="aadharno" placeholder="Enter Aadhar no" required>
         <br/>
-        <label for="checkin">Check-in date</label>
+        <label for="checkin">Check-in Date</label>
         <br/>
-        <input type="date" id="checkin" name="checkin" required>
+        <input type="text" id="checkin" name="checkin" placeholder="Enter Date" required>
         <br/>
-        <label for="checkout">Check-out date</label>
+        <label for="checkout">Check-out Date</label>
         <br/>
-        <input type="date" id="checkout" name="checkout" required>
+        <input type="text" id="checkout" name="checkout" placeholder="Enter Date" required>
         <br/>
         </div>
-        <button id="bt" onclick="message()"> BOOK</button><br/>    
+        <button> BOOK</button><br/> 
     </form>
     </body>
     <style>
-        form{
+        .myForm{
             border-style:ridge;
             border-color: palevioletred; 
             border-width: 5px;
@@ -52,9 +52,6 @@
             size:100px;
             font-size: smaller;
         }
-
-        
-
         h1{
             text-align: center;
             color: rgb(65, 30, 74);
@@ -69,7 +66,9 @@
             font-size: larger;
             padding: 10px;
             display: flex;
+            font-family: "Nunito Sans";
         }
+      
         button{    
             margin: auto;
             font-size: xx-large;
@@ -87,19 +86,20 @@
 
         }
         @media screen and (max-width: 768px) {
-            form{
+            .myForm{
                 font-size: 10px;
                 margin-bottom: 0%;
                 height:100%;
                 margin-top: 50px;
-                margin-left: 50px;
-                margin-right: 50px;
+                margin-left: 10px;
+                margin-right: 10px;
+                
             }
             .bform{
-                font-size: 30px;
+                font-size: 20px;
             }
             .bform input{
-                font-size: 30px;
+                font-size: 20px;
             
             }
             button{
@@ -111,10 +111,25 @@
             }
         }
     </style>
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
-        function message(){
+    $( function() {
+    $( "#checkin" ).datepicker();
+  } );
+  </script>
+  <script>
+    $( function() {
+    $( "#checkout" ).datepicker();
+  } );
+  </script>
+    <script>
+             function message(){
             var a = document.forms["myForm"]["name"].value;
                if (a == "") {
+                alert("required");
                 return false;
               }
             var b = document.forms["myForm"]["phnumber"].value;
@@ -143,64 +158,7 @@
            }
             }
     </script>
+   
     <?php include 'footer.php';?>
     </html>
-     <?php
-              if(isset($_POST['name']))
-              {
-              $data=$_POST['name'];
-              $fp = fopen('data.txt', 'a');
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              ?> <br/>
-              <?php
-              if(isset($_POST['phnumber']))
-              {
-              $data=$_POST['phnumber'];
-              
-              $fp = fopen('data.txt', 'a');
-              
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              if(isset($_POST['email']))
-              {
-              $data=$_POST['email'];
-              
-              $fp = fopen('data.txt', 'a');
-              
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              if(isset($_POST['aadharno']))
-              {
-              $data=$_POST['aadharno'];
-              
-              $fp = fopen('data.txt', 'a');
-              
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              if(isset($_POST['checkin']))
-              {
-              $data=$_POST['checkin'];
-              
-              $fp = fopen('data.txt', 'a');
-              
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              if(isset($_POST['checkout']))
-              {
-              $data=$_POST['checkout'];
-              
-              $fp = fopen('data.txt', 'a');
-              
-              fwrite($fp, $data);
-              fclose($fp);
-              }
-              ?>
-    
-
-    
+     
