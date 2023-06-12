@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<body>
    <head>
       <title> Fetch data from the database in show it into a HTML table dynamically</title>
    </head>
+   <body>
 <?php
 //fetch connection details from database.php file using require_once(); function
 define("server", "localhost");
@@ -48,4 +48,7 @@ echo "</table>";
 
 mysqli_close($connect);
 }
+
 ?>
+</body>
+</html>
