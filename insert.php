@@ -3,7 +3,7 @@
 <head>
     <title>Insert Page page</title>
 </head>
-
+<?php include 'popup.php';?>
 <body>
 
         <?php
@@ -34,12 +34,12 @@
 
         // Check if the query is successful
         if(mysqli_query($conn, $sql)){
-            echo "<h3>data stored in a database successfully."
-                . " Please browse your localhost php my admin"
-                . " to view the updated data</h3>";
+            // echo "<h3>data stored in a database successfully."
+            //     . " Please browse your localhost php my admin"
+            //     . " to view the updated data</h3>";
 
-            echo nl2br("\n$name\n $phnumber\n "
-                . "$email\n $aadharno\n $checkin \n$checkout");
+            // echo nl2br("\n$name\n $phnumber\n "
+            //     . "$email\n $aadharno\n $checkin \n$checkout");
            
         } else{
             echo "ERROR: Hush! Sorry $sql. "
