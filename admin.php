@@ -163,7 +163,9 @@
              <br></br>
              <input id="font" type="password" placeholder="Password">
              <br></br>
-             <button id="font" >login</button>
+             <form action="index.php" method="post">
+             <button type="submit" name="fetch" id="font">login</button>
+              </form>
             </div>
             <?php include 'footer.php';?>
        
