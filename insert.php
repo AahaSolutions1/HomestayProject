@@ -11,7 +11,7 @@
         // servername => localhost
         // username => root
         // password => empty
-        // database name => staff
+        // database name => bookingform
         $conn = mysqli_connect("localhost", "root", "", "bookingform");
 
         // Check connection
@@ -20,7 +20,7 @@
                 . mysqli_connect_error());
         }
 
-        // Taking all 5 values from the form data(input)
+        // Taking all 6 values from the form data(input)
         $name = $_REQUEST['name'];
         $phnumber = $_REQUEST['phnumber'];
         $email = $_REQUEST['email'];
@@ -34,6 +34,7 @@
 
         // Check if the query is successful
         if(mysqli_query($conn, $sql)){
+            echo"<h2>Success</h2>";
             // echo "<h3>data stored in a database successfully."
             //     . " Please browse your localhost php my admin"
             //     . " to view the updated data</h3>";
