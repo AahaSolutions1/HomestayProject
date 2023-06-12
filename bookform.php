@@ -9,7 +9,7 @@
    
     <body>
    
-    <form name="myForm" action="data.txt" method="post" autocomplete="on">
+    <form name="myForm" class="myForm" action="popup.php" method="post" autocomplete="on">
         <h1>BOOKING FORM</h1>
         <div class="bform">
         <label for="name">Name</label>
@@ -37,11 +37,11 @@
         <input type="text" id="checkout" name="checkout" required>
         <br/>
         </div>
-        <button id="bt" onclick="message()"> BOOK</button><br/>    
+        <button> BOOK</button><br/> 
     </form>
     </body>
     <style>
-        form{
+        .myForm{
             border-style:ridge;
             border-color: palevioletred; 
             border-width: 5px;
@@ -52,9 +52,6 @@
             size:100px;
             font-size: smaller;
         }
-
-        
-
         h1{
             text-align: center;
             color: rgb(65, 30, 74);
@@ -70,6 +67,7 @@
             padding: 10px;
             display: flex;
         }
+      
         button{    
             margin: auto;
             font-size: xx-large;
@@ -111,10 +109,25 @@
             }
         }
     </style>
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
-        function message(){
+    $( function() {
+    $( "#checkin" ).datepicker();
+  } );
+  </script>
+  <script>
+    $( function() {
+    $( "#checkout" ).datepicker();
+  } );
+  </script>
+    <script>
+             function message(){
             var a = document.forms["myForm"]["name"].value;
                if (a == "") {
+                alert("required");
                 return false;
               }
             var b = document.forms["myForm"]["phnumber"].value;
@@ -143,20 +156,7 @@
            }
             }
     </script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script>
-    $( function() {
-    $( "#checkin" ).datepicker();
-  } );
-  </script>
-  <script>
-    $( function() {
-    $( "#checkout" ).datepicker();
-  } );
-  </script>
+   
     <?php include 'footer.php';?>
     </html>
      <?php
