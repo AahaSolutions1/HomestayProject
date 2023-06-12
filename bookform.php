@@ -16,23 +16,23 @@
         <br/>
         <input type="text" id="name" name="name"  placeholder="Enter Name" required>
         <br/>
-        <label for="phnumber">Phone number</label>
+        <label for="phnumber">Phone Number</label>
         <br/>
-        <input type="text" id="phnumber" name="phnumber" placeholder="Enter number" required>
+        <input type="text" id="phnumber" name="phnumber" placeholder="Enter Number" required>
         </br>
         <label for="email">E-mail</label>
         <br/>
         <input type="email" id="email" name="email" placeholder="Enter E-mail" required>
         <br/>
-        <label for="aadharno">Aadhar number</label>
+        <label for="aadharno">Aadhar Number</label>
         <br/>
         <input type="text" id="aadharno" name="aadharno" placeholder="Enter Aadhar no" required>
         <br/>
-        <label for="checkin">Check-in date</label>
+        <label for="checkin">Check-in Date</label>
         <br/>
         <input type="text" id="checkin" name="checkin" placeholder="Enter Date" required>
         <br/>
-        <label for="checkout">Check-out date</label>
+        <label for="checkout">Check-out Date</label>
         <br/>
         <input type="text" id="checkout" name="checkout" placeholder="Enter Date" required>
         <br/>
@@ -66,7 +66,7 @@
             font-size: larger;
             padding: 10px;
             display: flex;
-            font-family: "Nunito Sans",  sans-serif;
+            font-family: "Nunito Sans";
         }
       
         button{    
