@@ -17,7 +17,7 @@
              margin-top:200px;
              border-radius: 10px;
              padding-bottom: 20px;
-             border:9px double rgba(234, 121, 158,3)
+             border:9px solid palevioletred;
          }
          h1{
            font-weight: bolder;
