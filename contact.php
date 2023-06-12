@@ -71,12 +71,12 @@
         <p>Please fill in the details below,submit the form <br>
              and we will process your enquiry as quickly as possible. <br></p>
         
-        <form>
+        <form action="condet.php" method="$_POST">
         
-            <input type="text" placeholder="Full Name" required> <br>
-            <input type="text" placeholder="Email address" required> <br>
-            <input type="number" placeholder="Phone Number" required> <br>
-            <textarea placeholder="Message" required></textarea>
+            <input type="text" name="Full_name" placeholder="Full Name" required> <br>
+            <input type="text" name="Email" placeholder="Email address" required> <br>
+            <input type="text" name="Phone" placeholder="Phone Number" pattern="[0-9]{10}" required> <br>
+            <textarea placeholder="Message"  name="Message" required></textarea>
              <button> SUBMIT </button>
         </form>
        </div>
