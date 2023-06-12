@@ -30,11 +30,11 @@
         <br/>
         <label for="checkin">Check-in date</label>
         <br/>
-        <input type="text" id="checkin" name="checkin" required>
+        <input type="text" id="checkin" name="checkin" placeholder="Enter Date" required>
         <br/>
         <label for="checkout">Check-out date</label>
         <br/>
-        <input type="text" id="checkout" name="checkout" required>
+        <input type="text" id="checkout" name="checkout" placeholder="Enter Date" required>
         <br/>
         </div>
         <button> BOOK</button><br/> 
@@ -66,6 +66,7 @@
             font-size: larger;
             padding: 10px;
             display: flex;
+            font-family: "Nunito Sans",  sans-serif;
         }
       
         button{    
