@@ -17,7 +17,7 @@
              margin-top:200px;
              border-radius: 10px;
              padding-bottom: 20px;
-             border:9px double rgba(234, 121, 158,3)
+             border:9px solid palevioletred;
          }
          h1{
            font-weight: bolder;
@@ -30,6 +30,9 @@
             font-size: 23px;
             border-radius: 5px;
             background-color: #c8d6e5;
+         }
+         #font{
+       font-family: "Nunito sans, sans serif"
          }
          div  button{
             background-color:#77a8a8;
@@ -155,9 +158,9 @@
         <div class="box">
             <h1>ADMIN LOGIN</h1>
              <h4>Enter your details to get sign in to your account</h4>
-             <input type="email" placeholder="Email-d">
+             <input id="font"type="email" placeholder="Email-d">
              <br></br>
-             <input type="password" placeholder="Password">
+             <input id="font" type="password" placeholder="Password">
              <br></br>
              <button >login</button>
             </div>
