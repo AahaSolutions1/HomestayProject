@@ -9,7 +9,7 @@
    
     <body>
    
-    <form name="myForm" class="myForm" action="popup.php" method="post" autocomplete="on">
+    <form name="myForm" class="myForm" action="insert.php" method="post" autocomplete="on">
         <h1>BOOKING FORM</h1>
         <div class="bform">
         <label for="name">Name</label>
@@ -18,7 +18,7 @@
         <br/>
         <label for="phnumber">Phone Number</label>
         <br/>
-        <input type="text" id="phnumber" name="phnumber" placeholder="Enter Number" required>
+        <input type="text" id="phnumber" name="phnumber"  pattern="[0-9]{10}" placeholder="Enter Number" required>
         </br>
         <label for="email">E-mail</label>
         <br/>
@@ -93,12 +93,14 @@
                 margin-top: 50px;
                 margin-left: 50px;
                 margin-right: 50px;
+                padding-right:40px;
+                padding-left: 40px;
             }
             .bform{
-                font-size: 30px;
+                font-size: 20px;
             }
             .bform input{
-                font-size: 30px;
+                font-size: 15px;
             
             }
             button{
