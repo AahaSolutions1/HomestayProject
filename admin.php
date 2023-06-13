@@ -74,7 +74,8 @@
              <br></br>
              <input id="font" type="password" name="password" placeholder="Password">
              <br></br>
-             <button type="submit" class="login-button" name="submit" id="font">login</button>
+             <form action="index.php" method="post">
+             <button type="submit" name="fetch" id="font">login</button>
               </form>
             </div>
             <footer>
