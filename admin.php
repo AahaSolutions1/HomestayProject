@@ -154,7 +154,7 @@
            </li>
            <li> <a href="contact.php">Contact us</a>
            </li>
-           <li> <a href="admiin.php">Admin</a></li>
+           <li> <a href="admin.php">Admin</a></li>
          </ul>
        </div>
        <script>
