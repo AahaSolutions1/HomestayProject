@@ -4,7 +4,6 @@
    </head>
    <body>
 <?php
-//fetch connection details from database.php file using require_once(); function
 define("server", "localhost");
 define("user", "root");
 define("password", "");
