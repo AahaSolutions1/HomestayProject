@@ -43,6 +43,9 @@ img.ab{
 .text button{
  background-color: darkseagreen;
  font-size: 30px;
+ border: none;
+ border-radius: 10px;
+ cursor:pointer;
 }
 .map{
      background-color: rgba(0, 0, 0, 0.2);

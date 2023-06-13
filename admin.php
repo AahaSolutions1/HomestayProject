@@ -174,7 +174,7 @@
              <br></br>
              <input id="font" type="password" placeholder="Password">
              <br></br>
-             <form action="index.php" method="post">
+             <form action="contable.php" method="post">
              <button type="submit" name="fetch" id="font">login</button>
               </form>
             </div>
