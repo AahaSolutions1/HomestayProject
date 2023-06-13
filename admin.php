@@ -176,10 +176,8 @@
            }
          }
        </script> 
-<<<<<<< HEAD
       
         <div class="box">
-=======
 
 <?php
     require('db.php');
@@ -209,7 +207,6 @@
 ?>
     <form class="form" method="post" name="login">
     <div class="box">
->>>>>>> 33b61611c5f859442f62a66f9544517e19f7783c
             <h1>ADMIN LOGIN</h1>
              <h4>Enter your details to get sign in to your account</h4>
              <input id="font"type="email"class="login-input"  placeholder="Email-d" name=email autofocus="true">
