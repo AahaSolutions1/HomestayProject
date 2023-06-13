@@ -139,8 +139,6 @@
 
     <body class="navbod">
     
-=======
-    <body>
 >>>>>>> 33b61611c5f859442f62a66f9544517e19f7783c
     <div class="nav" id="topnav">
          <div class="nav-image">
