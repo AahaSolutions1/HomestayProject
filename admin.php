@@ -5,9 +5,7 @@
     <meta name="viewport" content="width-device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body{
-            background-color: #c8d6e5;
-        }
+       
         footer{
               width:100%;
       margin-top:20%;
@@ -65,10 +63,16 @@
     display: flex;
 
   }
-  button {
-    background-color: paleturquoise;
-    font-size: 25px;
-  }
+  .navbod
+{
+   background-color: #c8d6e5;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .nav li a {
     color: paleturquoise;
     text-align: center;
@@ -131,7 +135,8 @@
          }
     </style>
 
-    <body>
+    <body class="navbod">
+    
     <div class="nav" id="topnav">
          <div class="nav-image">
            <div class="logo">
@@ -155,6 +160,7 @@
            <li> <a href="admin.php">Admin</a></li>
          </ul>
        </div>
+       
        <script>
          function myFunction() {
            var x = document.getElementById("topnav");
@@ -165,6 +171,7 @@
            }
          }
        </script> 
+      
         <div class="box">
             <h1>ADMIN LOGIN</h1>
              <h4>Enter your details to get sign in to your account</h4>

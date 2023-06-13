@@ -47,6 +47,7 @@
     .nav li a:hover {
       text-decoration: underline;
     }
+   
  .logo {
       display: flex;
     }
