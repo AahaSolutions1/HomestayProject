@@ -5,7 +5,6 @@
     <link rel="icon" href="logo.jpg" type="image/x-icon">
     <meta name="viewport" content="width-device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<<<<<<< HEAD
     <style>
        
         footer{
@@ -138,10 +137,6 @@
     </style>
 
     <body class="navbod">
-    
-=======
-    <body>
->>>>>>> 33b61611c5f859442f62a66f9544517e19f7783c
     <div class="nav" id="topnav">
          <div class="nav-image">
            <div class="logo">
