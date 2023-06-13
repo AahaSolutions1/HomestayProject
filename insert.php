@@ -3,7 +3,7 @@
 <head>
     <title>Insert Page page</title>
 </head>
-<?php include 'popup.php';?>
+
 <body>
 
         <?php
@@ -35,7 +35,7 @@
 
         // Check if the query is successful
         if(mysqli_query($conn, $sql)){
-            echo"<h2>Success</h2>";
+            
         } else{
             echo "ERROR: Hush! Sorry $sql. "
                 . mysqli_error($conn);
