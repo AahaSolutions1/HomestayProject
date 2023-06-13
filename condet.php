@@ -23,14 +23,14 @@
 
         // Taking all 5 values from the form data(input)
         // $S_NO=['S_NO'];
-        $First_name= $_REQUEST['Full_name'];
+        $Full_name= $_REQUEST['Full_name'];
         $Email = $_REQUEST['Email'];
         $Phone = $_REQUEST['Phone'];
         $Message= $_REQUEST['Message'];
        
 
         // We are going to insert the data into our sampleDB table
-        $sql = "INSERT INTO sampletable VALUES ('','$First_name',
+        $sql = "INSERT INTO sampletable VALUES ('','$Full_name',
             '$Email','$Phone','$Message')";
 
         // Check if the query is successful
