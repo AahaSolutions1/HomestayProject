@@ -15,8 +15,6 @@
       text-align: center;
       color: paleturquoise;
       font-size:x-large ;
-    
-
     }
          .box{
              margin: 30px;
