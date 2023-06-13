@@ -57,7 +57,7 @@
         if ($rows == 1) {
             $_SESSION['email'] = $email;
            
-            header("Location: contact.php");
+            header("Location:adminpanel.php");
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>
