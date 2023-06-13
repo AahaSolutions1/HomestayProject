@@ -3,8 +3,10 @@
 <html>
     <head>  
         <title>HOMEPAGE</title>
-    </head>  
-    <body>  
+    </head>
+   
+    <body>
+   
     <form name="myForm" class="myForm" action="insert.php" method="post" autocomplete="on">
         <h1>BOOKING FORM</h1>
         <div class="bform">
