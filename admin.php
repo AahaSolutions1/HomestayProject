@@ -46,7 +46,7 @@
         if ($rows == 1) {
             $_SESSION['email'] = $email;
            
-            header("Location:adminpanel.php");
+            header("Location:panel.php");
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>
@@ -80,5 +80,4 @@
 <?php
     }
 ?>
-</body>
 </html>
