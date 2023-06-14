@@ -29,7 +29,7 @@ $name=$_GET['val2'];
         // Email content
         $mail->isHTML(false);
         $mail->Subject = 'Homestay Booking';
-        $mail->Body = "Dear $name,Your Homestay booking was rejected :(";
+        $mail->Body = "Dear $name,Your Homestay booking was rejected :|";
 
         // Send the email
         $mail->send();
