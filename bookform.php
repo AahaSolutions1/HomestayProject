@@ -1,15 +1,13 @@
 <?php include 'nav.php';?>
 <!DOCTYPE html>
 <html>
-
-    <head>
-        
+    <head>  
         <title>HOMEPAGE</title>
     </head>
    
     <body>
    
-    <form name="myForm" class="myForm" action="insert.php" method="post" autocomplete="on">
+    <form name="myForm" class="myForm" action="book.php" method="post" autocomplete="on">
         <h1>BOOKING FORM</h1>
         <div class="bform">
         <label for="name">Name</label>

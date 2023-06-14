@@ -5,7 +5,7 @@
     <link rel="icon" href="logo.jpg" type="image/x-icon">
     <meta name="viewport" content="width-device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <body>
+    <body class="navbod">
     <div class="nav" id="topnav">
          <div class="nav-image">
            <div class="logo">
@@ -29,17 +29,6 @@
            <li> <a href="admin.php">Admin</a></li>
          </ul>
        </div>
-       <script>
-         function myFunction() {
-           var x = document.getElementById("topnav");
-           if (x.className === "nav") {
-             x.className += " responsive";
-           } else {
-             x.className = "nav";
-           }
-         }
-       </script> 
-
 <?php
     require('db.php');
     session_start();
@@ -66,6 +55,7 @@
         }
     } else {
 ?>
+<body>
     <form class="form" method="post" name="login">
     <div class="box">
             <h1>ADMIN LOGIN</h1>
@@ -74,7 +64,6 @@
              <br></br>
              <input id="font" type="password" name="password" placeholder="Password">
              <br></br>
-             <form action="index.php" method="post">
              <button type="submit" name="fetch" id="font">login</button>
               </form>
             </div>

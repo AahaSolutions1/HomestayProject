@@ -12,7 +12,7 @@
         // username => root
         // password => empty
         // database name => bookingform
-        $conn = mysqli_connect("localhost", "root", "", "bookingform");
+        $conn = mysqli_connect("localhost", "root", "", "bookingform","3306");
 
         // Check connection
         if($conn === false){
@@ -35,15 +35,7 @@
 
         // Check if the query is successful
         if(mysqli_query($conn, $sql)){
-            echo"<h2>Success</h2>";
-            header("Location:popup.php");
-            // echo "<h3>data stored in a database successfully."
-            //     . " Please browse your localhost php my admin"
-            //     . " to view the updated data</h3>";
-
-            // echo nl2br("\n$name\n $phnumber\n "
-            //     . "$email\n $aadharno\n $checkin \n$checkout");
-           
+            
         } else{
             echo "ERROR: Hush! Sorry $sql. "
                 . mysqli_error($conn);
