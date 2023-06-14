@@ -1,4 +1,4 @@
-<?php
+<!<?php
 
 $servername = "localhost";
 $username = "root";
@@ -27,9 +27,6 @@ $result = $conn->query($query);
 		while($row = $result->fetch_assoc())
 		{
             echo "<div class='row'>";
-            echo "<div class='num'>";
-            echo "<p>" .$row['S_NO'].".</p>";
-            echo "</div>";
             echo "<div class='col1'>";
             echo "<p>Name: " . $row['name']."</br>";
             echo "E-mail: " . $row['email']."</p>" ;
@@ -39,44 +36,42 @@ $result = $conn->query($query);
             echo "Check-out Date: " . $row['checkout']."</p>";
             echo "</div>";
             echo "<div class='col3'>";
-            echo "<button class='btn'>accept</button>";
-            echo "<button class='btn'>reject</button>";
+           
+            echo "<button class='btn'><a href='accept.php?val1=".$row['email']."'>accept</a>";
+            echo "<button class='btn'><a href='reject.php?val1=".$row['email']."'>reject</a>";
+            
             echo "</div>";
-            echo "</div>";
-            echo "<div class='hori'>";
-            echo "<hr>";
             echo "</div>";
 		}
 	}
 	else {
-		echo "<h1 class='err'>No Bookings Yet</h1>";
+		echo "0 results";
 	}
-
+    
 $conn->close();
 
 ?>
 <style>
-    .hori hr{
-        border-width:5px;
-    }
      .row{
         columns: 2;
     } 
-    .num{
-        margin-top: -10px;
-        margin-left: 10px;
-    }
+
     .col1 {
-        margin-top: -43px;
+        margin-top: -20px;
         margin-right: 10px;
-        margin-left: 50px;
+        margin-left: 100px;
         margin-bottom: 30px;
     }
 
     .col2 {
+<<<<<<< HEAD
+        margin-left: -100px;
+        margin-bottom: 30px;
+=======
         margin-top:-50px;
         margin-left: -50px;
         margin-bottom: 40px;
+>>>>>>> d23c537e11e122e8ae73ddac0805e1db7dae0695
     }
     
     .col3 {
@@ -88,7 +83,7 @@ $conn->close();
         font-size: 20px;
     }
     .btn{
-        margin-left: 10px;
+        margin-left: 20px;
         margin-right: 20px;
         font-size: 20px;
         border-radius: 5px;
@@ -97,7 +92,13 @@ $conn->close();
     .btn:hover{
         color:blueviolet;
     }
-    .err{
-        text-align: center;
+    @media screen and (max-width: 768px) {
+        .col3{
+            margin-left: -4000px;
+        }
+        .btn{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
     }
 </style>
