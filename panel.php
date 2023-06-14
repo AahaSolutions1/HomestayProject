@@ -22,8 +22,8 @@ $result = $conn->query($query);
 
 	if ($result->num_rows > 0)
 	{
-        echo "<h2 align='center'> Login Details </h2>";
-		// OUTPUT DATA OF EACH ROW
+        echo "<h2> Login Details </h2>";
+		
 		while($row = $result->fetch_assoc())
 		{
             echo "<div class='row'>";
@@ -42,20 +42,25 @@ $result = $conn->query($query);
             
             echo "</div>";
             echo "</div>";
+            echo "<div class='hori'>";
+            echo "<hr>";
+            echo "</div>";
 		}
 	}
 	else {
-		echo "0 results";
+		echo "No Bookings yet";
 	}
     
 $conn->close();
 
 ?>
 <style>
+     .hori{
+        border-width:10px;
+     }
      .row{
         columns: 2;
     } 
-
     .col1 {
         margin-top: -20px;
         margin-right: 10px;
