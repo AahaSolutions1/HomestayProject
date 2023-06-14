@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-<!-- <head>
-<meta name="viewport" content="width=device-width">
-</head> -->
 <?php
 
 $servername = "localhost";
@@ -62,9 +57,9 @@ $conn->close();
 
 ?>
 <style>
-    .num p{
+    .num {
         margin-left: 10px;
-        margin-top: 5px;
+        margin-top: 1px;
     }
     h2{
         text-align:center;
@@ -128,9 +123,7 @@ $conn->close();
             margin-left: 250px;
         }
         .btn{
-            margin-left: 0px;
-            margin-right: 0px;
+            margin-right: 5px;
         }
     }
 </style>
-</html>
