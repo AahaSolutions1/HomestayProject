@@ -64,14 +64,9 @@ $conn->close();
     }
 
     .col2 {
-<<<<<<< HEAD
-        margin-left: -100px;
-        margin-bottom: 30px;
-=======
         margin-top:-50px;
         margin-left: -50px;
         margin-bottom: 40px;
->>>>>>> d23c537e11e122e8ae73ddac0805e1db7dae0695
     }
     
     .col3 {
