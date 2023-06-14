@@ -5,7 +5,8 @@
     <link rel="icon" href="logo.jpg" type="image/x-icon">
     <meta name="viewport" content="width-device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <body class="navbod">
+    <body>
+    <div class="navbod">
     <div class="nav" id="topnav">
          <div class="nav-image">
            <div class="logo">
@@ -29,6 +30,7 @@
            <li> <a href="admin.php">Admin</a></li>
          </ul>
        </div>
+</div>
 <?php
     require('db.php');
     session_start();
@@ -55,7 +57,6 @@
         }
     } else {
 ?>
-<body>
     <form class="form" method="post" name="login">
     <div class="box">
             <h1>ADMIN LOGIN</h1>
