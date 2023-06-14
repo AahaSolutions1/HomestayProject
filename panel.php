@@ -27,6 +27,9 @@ $result = $conn->query($query);
 		while($row = $result->fetch_assoc())
 		{
             echo "<div class='row'>";
+            echo "<div class='num'>";
+            echo "<p>" .$row['S_NO']."</p>";
+            echo "</div>";
             echo "<div class='col1'>";
             echo "<p>Name: " . $row['name']."</br>";
             echo "E-mail: " . $row['email']."</p>" ;
@@ -43,7 +46,7 @@ $result = $conn->query($query);
 		}
 	}
 	else {
-		echo "0 results";
+		echo "<h1 class='err'>No Bookings Yet</h1>";
 	}
 
 $conn->close();
@@ -53,16 +56,19 @@ $conn->close();
      .row{
         columns: 2;
     } 
-
+    .num{
+        margin-top: -10px;
+        margin-left: 10px;
+    }
     .col1 {
-        margin-top: -20px;
+        margin-top: -53px;
         margin-right: 10px;
         margin-left: 100px;
         margin-bottom: 30px;
     }
 
     .col2 {
-        margin-left: -150px;
+        margin-left: -50px;
         margin-bottom: 30px;
     }
     
@@ -84,13 +90,7 @@ $conn->close();
     .btn:hover{
         color:blueviolet;
     }
-    @media screen and (max-width: 768px) {
-        .col3{
-            margin-left: -4000px;
-        }
-        .btn{
-            margin-left: 0px;
-            margin-right: 0px;
-        }
+    .err{
+        text-align: center;
     }
 </style>
