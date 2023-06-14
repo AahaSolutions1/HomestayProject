@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
     <title>ADMIN</title>
-    <link rel="stylesheet" href="./admin.css"> 
+    <link rel="stylesheet" href="admin.css"/>
     <link rel="icon" href="logo.jpg" type="image/x-icon">
     <meta name="viewport" content="width-device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <body class="navbod">
+    <style>
+      body{
+        margin:0px;
+      }
+    </style>
+    <body>
+    <div class="navbod">
     <div class="nav" id="topnav">
          <div class="nav-image">
            <div class="logo">
@@ -29,6 +35,7 @@
            <li> <a href="admin.php">Admin</a></li>
          </ul>
        </div>
+</div>
 <?php
     require('db.php');
     session_start();
@@ -41,12 +48,12 @@
       
         $query    = "SELECT * FROM `users` WHERE email='$email'
                      AND password='" . md5($password) . "'";
-        $result = mysqli_query($con, $query) or die(mysql_error());
+        $result = mysqli_query($con, $query) or die(mysqli_error($con));
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['email'] = $email;
            
-            header("Location:adminpanel.php");
+            header("Location:panel.php");
         } else {
             echo "<div class='form'>
                   <h3>Incorrect Username/password.</h3><br/>
@@ -55,7 +62,6 @@
         }
     } else {
 ?>
-<body>
     <form class="form" method="post" name="login">
     <div class="box">
             <h1>ADMIN LOGIN</h1>
@@ -80,5 +86,4 @@
 <?php
     }
 ?>
-</body>
 </html>
