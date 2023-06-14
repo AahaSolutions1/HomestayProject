@@ -28,7 +28,7 @@ $name=$_GET['val2'];
 
         // Email content
         $mail->isHTML(false);
-        $mail->Subject = 'Form Submission';
+        $mail->Subject = 'Homestay Booking';
         $mail->Body = "Dear $name,Your Homestay booking was rejected :(";
 
         // Send the email
