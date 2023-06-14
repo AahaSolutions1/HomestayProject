@@ -1,4 +1,9 @@
-<!<?php
+<!DOCTYPE html>
+<html>
+<!-- <head>
+<meta name="viewport" content="width=device-width">
+</head> -->
+<?php
 
 $servername = "localhost";
 $username = "root";
@@ -19,14 +24,16 @@ $query = "SELECT * FROM `bookingdetails`;";
 
 // FETCHING DATA FROM DATABASE
 $result = $conn->query($query);
-
 	if ($result->num_rows > 0)
-	{
+	{	
         echo "<h2> Login Details </h2>";
 		
 		while($row = $result->fetch_assoc())
 		{
             echo "<div class='row'>";
+            echo "<div class='num'";
+            echo "<p>".$row['S_NO'].".</p>";
+            echo "</div>";
             echo "<div class='col1'>";
             echo "<p>Name: " . $row['name']."</br>";
             echo "E-mail: " . $row['email']."</p>" ;
@@ -37,8 +44,8 @@ $result = $conn->query($query);
             echo "</div>";
             echo "<div class='col3'>";
            
-            echo "<button class='btn'><a href='accept.php?val1=".$row['email']."&val2=".$row['name']."'>accept</a>";
-            echo "<button class='btn'><a href='reject.php?val1=".$row['email']."&val2=".$row['name']."'>reject</a>";
+            echo "<button class='btn'><a class='attri' href='accept.php?val1=".$row['email']."&val2=".$row['name']."'>accept</a>";
+            echo "<button class='btn'><a  class='attri'href='reject.php?val1=".$row['email']."&val2=".$row['name']."'>reject</a>";
             
             echo "</div>";
             echo "</div>";
@@ -55,14 +62,21 @@ $conn->close();
 
 ?>
 <style>
-     .hori{
-        border-width:10px;
+    .num p{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    h2{
+        text-align:center;
+    }
+     .hori hr{
+        border-width:5px;
      }
      .row{
         columns: 2;
     } 
     .col1 {
-        margin-top: -20px;
+        margin-top: -40px;
         margin-right: 10px;
         margin-left: 100px;
         margin-bottom: 30px;
@@ -79,8 +93,22 @@ $conn->close();
         margin-left: 300px;
     }
 
-    p{
+    .col1 p{
         font-size: 20px;
+    }
+    .col2 p{
+        font-size: 20px;
+    }
+    .col3 p{
+        margin-top: 100px;
+        font-size: 20px;
+    }
+    .attri{
+        text-decoration: none;
+        color:black;
+    }
+    .attri:hover{
+        color:whitesmoke;
     }
     .btn{
         margin-left: 20px;
@@ -90,11 +118,14 @@ $conn->close();
         cursor: pointer;
     }
     .btn:hover{
-        color:blueviolet;
+       background-color: #4d4f51;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1100px) {
+        .col2{
+            margin-left:-30px;
+        }
         .col3{
-            margin-left: -4000px;
+            margin-left: 250px;
         }
         .btn{
             margin-left: 0px;
@@ -102,3 +133,4 @@ $conn->close();
         }
     }
 </style>
+</html>
