@@ -28,7 +28,7 @@ $result = $conn->query($query);
 		{
             echo "<div class='row'>";
             echo "<div class='num'>";
-            echo "<p>" .$row['S_NO']."</p>";
+            echo "<p>" .$row['S_NO'].".</p>";
             echo "</div>";
             echo "<div class='col1'>";
             echo "<p>Name: " . $row['name']."</br>";
@@ -39,7 +39,9 @@ $result = $conn->query($query);
             echo "Check-out Date: " . $row['checkout']."</p>";
             echo "</div>";
             echo "<div class='col3'>";
-            echo "<button class='btn'>accept</button>";
+            echo "<form action='accept.php'>
+                  email:" .$row['email'].
+            "<button class='btn'>accept</button></form>";
             echo "<button class='btn'>reject</button>";
             echo "</div>";
             echo "</div>";
@@ -69,14 +71,19 @@ $conn->close();
     .col1 {
         margin-top: -43px;
         margin-right: 10px;
-        margin-left: 100px;
+        margin-left: 50px;
         margin-bottom: 30px;
     }
 
     .col2 {
+<<<<<<< HEAD
+        margin-left: -100px;
+        margin-bottom: 30px;
+=======
         margin-top:-50px;
         margin-left: -50px;
         margin-bottom: 40px;
+>>>>>>> d23c537e11e122e8ae73ddac0805e1db7dae0695
     }
     
     .col3 {
@@ -88,7 +95,7 @@ $conn->close();
         font-size: 20px;
     }
     .btn{
-        margin-left: 20px;
+        margin-left: 10px;
         margin-right: 20px;
         font-size: 20px;
         border-radius: 5px;
