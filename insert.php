@@ -3,7 +3,7 @@
 <head>
     <title>Insert Page page</title>
 </head>
-<?php include 'popup.php';?>
+
 <body>
 
         <?php
@@ -36,6 +36,7 @@
         // Check if the query is successful
         if(mysqli_query($conn, $sql)){
             echo"<h2>Success</h2>";
+            header("Location:popup.php");
             // echo "<h3>data stored in a database successfully."
             //     . " Please browse your localhost php my admin"
             //     . " to view the updated data</h3>";
