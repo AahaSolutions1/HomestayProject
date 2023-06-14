@@ -7,9 +7,10 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 
 $email=$_GET['val1'];
+$name=$_GET['val2'];
     // Instantiate PHPMailer
     $mail = new PHPMailer(true);
-
+    
     try {
         // Server settings
         $mail->isSMTP();
@@ -26,12 +27,14 @@ $email=$_GET['val1'];
 
         // Email content
         $mail->isHTML(false);
-        $mail->Subject = 'Form Submission';
-        $mail->Body = "Your booking form is accepted";
+        $mail->Subject = 'Homestay Booking';
+        $mail->Body = "Dear $name,Your Homestay booking was Successfull :)";
 
         // Send the email
         $mail->send();
-        echo "Email is sent";
+        echo "<script>";
+        echo "alert('Email is sent to $email')";
+        echo "</script>";
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }

@@ -37,8 +37,8 @@ $result = $conn->query($query);
             echo "</div>";
             echo "<div class='col3'>";
            
-            echo "<button class='btn'><a href='accept.php?val1=".$row['email']."'>accept</a>";
-            echo "<button class='btn'><a href='reject.php?val1=".$row['email']."'>reject</a>";
+            echo "<button class='btn'><a href='accept.php?val1=".$row['email']."&val2=".$row['name']."'>accept</a>";
+            echo "<button class='btn'><a href='reject.php?val1=".$row['email']."&val2=".$row['name']."'>reject</a>";
             
             echo "</div>";
             echo "</div>";
