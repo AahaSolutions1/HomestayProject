@@ -42,17 +42,22 @@ $result = $conn->query($query);
             
             echo "</div>";
             echo "</div>";
+            echo "<div class='hori'>";
+            echo "<hr>";
+            echo "</div>";
 		}
 	}
 	else {
-		echo "No one booked";
+		echo "No Bookings yet";
 	}
     
 $conn->close();
 
 ?>
 <style>
-
+     .hori{
+        border-width:10px;
+     }
      .row{
         columns: 2;
     } 
