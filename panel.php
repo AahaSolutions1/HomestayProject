@@ -43,6 +43,9 @@ $result = $conn->query($query);
             echo "<button class='btn'>reject</button>";
             echo "</div>";
             echo "</div>";
+            echo "<div class='hori'>";
+            echo "<hr>";
+            echo "</div>";
 		}
 	}
 	else {
@@ -53,6 +56,9 @@ $conn->close();
 
 ?>
 <style>
+    .hori hr{
+        border-width:5px;
+    }
      .row{
         columns: 2;
     } 
@@ -61,15 +67,16 @@ $conn->close();
         margin-left: 10px;
     }
     .col1 {
-        margin-top: -53px;
+        margin-top: -43px;
         margin-right: 10px;
         margin-left: 100px;
         margin-bottom: 30px;
     }
 
     .col2 {
+        margin-top:-50px;
         margin-left: -50px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     
     .col3 {
