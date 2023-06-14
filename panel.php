@@ -1,4 +1,4 @@
-<?php
+<!<?php
 
 $servername = "localhost";
 $username = "root";
@@ -36,8 +36,10 @@ $result = $conn->query($query);
             echo "Check-out Date: " . $row['checkout']."</p>";
             echo "</div>";
             echo "<div class='col3'>";
-            echo "<button class='btn'>accept</button>";
-            echo "<button class='btn'>reject</button>";
+           
+            echo "<button class='btn'><a href='accept.php?val1=".$row['email']."'>accept</a></button>";
+            echo "<button class='btn'><a href='reject.php?val1=".$row['email']."'>reject</a></button>";
+            
             echo "</div>";
             echo "</div>";
 		}
@@ -45,7 +47,7 @@ $result = $conn->query($query);
 	else {
 		echo "0 results";
 	}
-
+    
 $conn->close();
 
 ?>

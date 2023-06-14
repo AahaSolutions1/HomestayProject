@@ -7,6 +7,7 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 
 $email=$_GET['val1'];
+
     // Instantiate PHPMailer
     $mail = new PHPMailer(true);
 
@@ -27,7 +28,7 @@ $email=$_GET['val1'];
         // Email content
         $mail->isHTML(false);
         $mail->Subject = 'Form Submission';
-        $mail->Body = "Your booking form is accepted";
+        $mail->Body = "Your booking form is rejected";
 
         // Send the email
         $mail->send();
