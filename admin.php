@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
     <title>ADMIN</title>
-    <link rel="stylesheet" href="./admin.css"> 
+    <link rel="stylesheet" href="admin.css"/>
     <link rel="icon" href="logo.jpg" type="image/x-icon">
     <meta name="viewport" content="width-device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body{
+        margin:0px;
+      }
+    </style>
     <body>
     <div class="navbod">
     <div class="nav" id="topnav">
