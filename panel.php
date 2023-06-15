@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html>
-    <head>
-<meta name="viewport" content="width-device-width">
-</head>
-<!<?php
-=======
 <?php
 
->>>>>>> d13f4405ee5e5f37843a9f92a8408781fb813066
 $servername = "localhost";
 $username = "root";
 $password = "";
