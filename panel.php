@@ -62,8 +62,15 @@ $conn->close();
 
     </script>
 <style>
-     .hori{
-        border-width:10px;
+    .num p{
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+    h2{
+        text-align:center;
+    }
+     .hori hr{
+        border-width:5px;
      }
      .row{
         columns: 2;
@@ -104,8 +111,11 @@ $conn->close();
             margin-left: -4000px;
         }
         .btn{
-            margin-left: 0px;
-            margin-right: 0px;
+            margin-right: 5px;
+        }
+        .col2{
+             margin-left:-300px;
         }
     }
 </style>
+</html>
