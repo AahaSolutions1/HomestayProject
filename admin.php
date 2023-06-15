@@ -209,7 +209,7 @@ function myFunction() {
 </div>
 <?php
     require('db.php');
-    session_start();
+  
     if (isset($_POST['email'])) {
         $email = stripslashes($_REQUEST['email']);   
         $email = mysqli_real_escape_string($con, $email);
@@ -222,9 +222,10 @@ function myFunction() {
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['email'] = $email;
-           
+
             header("Location:panel.php");
-        } else {
+        }
+         else {
           ?>
           
            <form class="form" method="post" name="login">
@@ -286,5 +287,6 @@ function myFunction() {
     </body>
 <?php
     }
+   
 ?>
 </html>
