@@ -1,4 +1,5 @@
 <?php
+// include 'panel.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -31,7 +32,8 @@ $name=$_GET['val2'];
         $mail->Body = "Dear $name,Your Homestay booking was Successfull :)";
 
         // Send the email
-        $mail->send();
+        $mail->send();  
+        include 'panel.php';
         echo "<script>";
         echo "alert('Email is sent to $email')";
         echo "</script>";
