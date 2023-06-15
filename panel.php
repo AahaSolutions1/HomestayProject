@@ -1,5 +1,10 @@
-<?php
+<!DOCTYPE html>
+<html>
 
+<form action="firstpage.html">
+<button id="logout" >LogOut</button>
+</form>
+<?php
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -57,6 +62,12 @@ $conn->close();
 
 ?>
 <style>
+
+#logout{
+         background-color: blue;
+         font-size:20px;
+         margin-left:95%;
+    }
     .num {
         margin-left: 10px;
         margin-top: 1px;
@@ -128,6 +139,9 @@ $conn->close();
         .col2{
              margin-left:-300px;
         }
+        #logout{
+         margin-left:88%;
+    }
     }
 </style>
 </html>
