@@ -9,6 +9,9 @@
     background-color: #c8d6e5;
     margin: 0px;
 }
+.check{
+    margin-right:170px;
+}
 #wrong{
   font-size:18px;
 }
@@ -52,6 +55,10 @@ font-size:x-large ;
  }
  #font{
 font-family: "Nunito sans, sans serif"
+ }
+ #password{
+font-family: "Nunito sans, sans serif"
+
  }
  div  button{
     background-color:#77a8a8;
@@ -108,7 +115,11 @@ display: none;
    }
      #font1{
    font-size:30px;
+     }
+   #pass{
+    font-size:30px;
    }
+   
     .box{
      margin-left:200px;
      margin-right:200px;
@@ -149,8 +160,27 @@ display: block;
 }
 
  }
+ 
 
     </style>
+    <script>
+ function myFunction1() {
+  var x = document.getElementById("passwo");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+function myFunction() {
+  var x = document.getElementById("pass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+ </script>
     <body>
     <div class="navbod">
     <div class="nav" id="topnav">
@@ -205,7 +235,11 @@ display: block;
              <p id="wrong" >Invalid useranme or password</p>
              <input id="font1"type="email"class="login-input"  placeholder="Email-d" name=email autofocus="true">
              <br></br>
-             <input id="font1" type="password" name="password" placeholder="Password">
+             <input id="pass" type="password" name="password" placeholder="Password">
+             <br></br>
+             <div class="check">
+             <input  id="check"type="checkbox" onclick="myFunction()">Show Password
+        </div>
              <br></br>
              <button type="submit" name="fetch" id="font1">login</button>
               </form>
@@ -231,7 +265,11 @@ display: block;
              <h4>Enter your details to get sign in to your account</h4>
              <input id="font"type="email"class="login-input"  placeholder="Email-d" name=email autofocus="true">
              <br></br>
-             <input id="font" type="password" name="password" placeholder="Password">
+             <input id="passwo" type="password" name="password" placeholder="Password">
+             <br></br>
+             <div class="check">
+             <input  id="check"type="checkbox" onclick="myFunction1()">Show Password
+        </div>
              <br></br>
              <button type="submit" name="fetch" id="font">login</button>
               </form>
