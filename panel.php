@@ -32,9 +32,7 @@ $result = $conn->query($query);
 		while($row = $result->fetch_assoc())
 		{
             echo "<div class='row'>";
-            echo "<div class='num'";
-            echo "<p>".$row['S_NO'].".</p>";
-            echo "</div>";
+          
             echo "<div class='col1'>";
             echo "<p>Name: " . $row['name']."</br>";
             echo "E-mail: " . $row['email']."</p>" ;
@@ -63,6 +61,11 @@ $conn->close();
 
 ?>
 <style>
+    #logout{
+        background-color: palevioletred;
+        font-size: 20px;
+        margin-left: 95%;
+    }
    
     h2{
         text-align:center;
@@ -93,14 +96,24 @@ $conn->close();
 
     .col1 p{
         font-size: 20px;
+        background-color: #D5D9ED;
     }
     .col2 p{
         font-size: 20px;
+        background-color: #D5D9ED;
     }
     .col3 p{
         margin-top: 100px;
         font-size: 20px;
         background-color: #D5D9ED;
+    }
+    .attri{
+        text-decoration: none;
+        color: black;
+    }
+    .attri:hover{
+        color:whitesmoke;
+        
     }
     .btn{
         margin-left: 20px;
@@ -110,7 +123,7 @@ $conn->close();
         cursor: pointer;
     }
     .btn:hover{
-        color:blueviolet;
+        background-color: #4d4f51;
     }
     @media screen and (max-width: 1100px) {
         .col2{
