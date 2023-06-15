@@ -66,10 +66,6 @@ $conn->close();
 
 ?>
 <style>
-<<<<<<< HEAD
-     .hori hr{
-        border-width:4px;
-=======
     .num {
         margin-left: 10px;
         margin-top: 1px;
@@ -79,7 +75,6 @@ $conn->close();
     }
      .hori hr{
         border-width:5px;
->>>>>>> d13f4405ee5e5f37843a9f92a8408781fb813066
      }
      .row{
         columns: 2;
