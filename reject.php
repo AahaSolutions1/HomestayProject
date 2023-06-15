@@ -1,4 +1,5 @@
 <?php
+include 'panel.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -24,7 +25,7 @@ mysqli_close($conn);
 
 
 $email=$_GET['val1'];
-//$name=$_GET['val2'];
+$name=$_GET['val2'];
     // Instantiate PHPMailer
     $mail = new PHPMailer(true);
 
@@ -45,7 +46,7 @@ $email=$_GET['val1'];
         // Email content
         $mail->isHTML(false);
         $mail->Subject = 'Homestay Booking';
-        $mail->Body = "Dear name,Your Homestay booking was rejected :|";
+        $mail->Body = "Dear $name,Your Homestay booking was rejected :|";
 
         // Send the email
         $mail->send();
