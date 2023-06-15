@@ -32,6 +32,7 @@ $result = $conn->query($query);
 		while($row = $result->fetch_assoc())
 		{
             echo "<div class='row'>";
+          
             echo "<div class='col1'>";
             echo "<p>Name: " . $row['name']."</br>";
             echo "E-mail: " . $row['email']."</p>" ;
@@ -42,8 +43,8 @@ $result = $conn->query($query);
             echo "</div>";
             echo "<div class='col3'>";
            
-            echo "<button  class='btn'><a onclick='mes()' href='accept.php?val1=".$row['email']."&val2=".$row['name']."'>accept</a></button>";
-            echo "<button class='btn'><a  href='reject.php?val1=".$row['email']."&val2=".$row['name']."'>reject</a>";
+            echo "<button class='btn'><a class='attri' href='accept.php?val1=".$row['email']."&val2=".$row['name']."'>accept</a></button>";
+            echo "<button class='btn'><a  class='attri'href='reject.php?val1=".$row['email']."&val2=".$row['name']."'>reject</a></button>";
             
             echo "</div>";
             echo "</div>";
@@ -53,30 +54,19 @@ $result = $conn->query($query);
 		}
 	}
 	else {
-		echo "No Bookings yet";
+		echo "<p class='empty'>No Bookings Yet<p>";
 	}
     
 $conn->close();
 
 ?>
-<script>
-   function mes()
-   {
-    alert('Email is sent');
-   }
-
-    </script>
 <style>
-
-#logout{
-         background-color: blue;
-         font-size:20px;
-         margin-left:95%;
+    #logout{
+        background-color: palevioletred;
+        font-size: 20px;
+        margin-left: 95%;
     }
-    .num {
-        margin-left: 10px;
-        margin-top: 5px;
-    }
+   
     h2{
         text-align:center;
     }
@@ -89,23 +79,41 @@ $conn->close();
     .col1 {
         margin-top: -20px;
         margin-right: 10px;
-        margin-left: 100px;
+        margin-left: 0px;
         margin-bottom: 30px;
     }
 
     .col2 {
         margin-top:-50px;
-        margin-left: -50px;
+        margin-left: -130px;
         margin-bottom: 40px;
     }
     
     .col3 {
-        margin-top: -70px;
+        margin-top: -77px;
         margin-left: 300px;
     }
 
-    p{
+    .col1 p{
         font-size: 20px;
+        background-color: #D5D9ED;
+    }
+    .col2 p{
+        font-size: 20px;
+        background-color: #D5D9ED;
+    }
+    .col3 p{
+        margin-top: 100px;
+        font-size: 20px;
+        background-color: #D5D9ED;
+    }
+    .attri{
+        text-decoration: none;
+        color: black;
+    }
+    .attri:hover{
+        color:whitesmoke;
+        
     }
     .btn{
         margin-left: 20px;
@@ -115,9 +123,12 @@ $conn->close();
         cursor: pointer;
     }
     .btn:hover{
-        color:blueviolet;
+        background-color: #4d4f51;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1100px) {
+        .col2{
+            margin-left:-30px;
+        }
         .col3{
             margin-left: -4000px;
         }
