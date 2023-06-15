@@ -1,4 +1,5 @@
 <?php
+include 'panel.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -31,10 +32,11 @@ $name=$_GET['val2'];
         $mail->Body = "Dear $name,Your Homestay booking was Successfull :)";
 
         // Send the email
-        $mail->send();
-        echo "<script>";
-        echo "alert('Email is sent to $email')";
-        echo "</script>";
+        $mail->send();  
+       
+        // echo "<script>";
+        // echo "alert('Email is sent to $email')";
+        // echo "</script>";
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
