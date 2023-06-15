@@ -100,16 +100,15 @@ $conn->close();
 
     .col1 p{
         font-size: 20px;
-        /* background-color: #D5D9ED; */
+      
     }
     .col2 p{
         font-size: 20px;
-        /* background-color: #D5D9ED; */
     }
     .col3 p{
         margin-top: 100px;
         font-size: 20px;
-        /* background-color: #D5D9ED; */
+        
     }
     .attri{
         text-decoration: none;
