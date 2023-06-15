@@ -6,9 +6,25 @@ require 'phpmailer/Exception.php';
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 
-$email=$_GET['val1'];
-$name=$_GET['val2'];
 
+$url='127.0.0.1:3306';
+$username='root';
+$password='';
+$conn=mysqli_connect($url,$username,$password,"bookingform");
+if(!$conn){
+ die('Could not Connect My Sql:' .mysqli_error($con));
+}
+$sql = "DELETE FROM bookingdetails WHERE name='" . $_GET["val2"] . "'";
+if (mysqli_query($conn, $sql)) {
+
+} else {
+    echo "Error deleting record: " . mysqli_error($conn);
+}
+mysqli_close($conn);
+
+
+$email=$_GET['val1'];
+//$name=$_GET['val2'];
     // Instantiate PHPMailer
     $mail = new PHPMailer(true);
 
@@ -24,15 +40,17 @@ $name=$_GET['val2'];
 
         // Recipients
         $mail->setFrom('homestayproject14@gmail.com');
-        $mail->addAddress($email);
+        $mail->addAddress($email);      
 
         // Email content
         $mail->isHTML(false);
         $mail->Subject = 'Homestay Booking';
-        $mail->Body = "Dear $name,Your Homestay booking was rejected :|";
+        $mail->Body = "Dear name,Your Homestay booking was rejected :|";
 
         // Send the email
         $mail->send();
+        
+    
         echo "<script>";
         echo "alert('Email is sent to $email')";
         echo "</script>";
