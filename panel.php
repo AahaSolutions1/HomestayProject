@@ -1,5 +1,9 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta name="viewport" content="width-device-width">
+</head>
 <!<?php
-
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -55,8 +59,8 @@ $conn->close();
 
 ?>
 <style>
-     .hori{
-        border-width:10px;
+     .hori hr{
+        border-width:4px;
      }
      .row{
         columns: 2;
@@ -99,5 +103,9 @@ $conn->close();
             margin-left: 0px;
             margin-right: 0px;
         }
+        .col2{
+             margin-left:-300px;
+        }
     }
 </style>
+</html>
