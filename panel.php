@@ -67,7 +67,6 @@ $conn->close();
 
     </script>
 <style>
-<<<<<<< HEAD
 
 #logout{
          background-color: blue;
@@ -75,9 +74,6 @@ $conn->close();
          margin-left:95%;
     }
     .num {
-=======
-    .num p{
->>>>>>> 73b6ed53ff1a1bd8525de1b9d5c456b56c228738
         margin-left: 10px;
         margin-top: 5px;
     }
