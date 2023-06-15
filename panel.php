@@ -45,8 +45,8 @@ $result = $conn->query($query);
             echo "</div>";
             echo "<div class='col3'>";
            
-            echo "<button class='btn'><a class='attri' href='accept.php?val1=".$row['email']."&val2=".$row['name']."'>accept</a>";
-            echo "<button class='btn'><a  class='attri'href='reject.php?val1=".$row['email']."&val2=".$row['name']."'>reject</a>";
+            echo "<button class='btn'><a class='attri' href='accept.php?val1=".$row['email']."&val2=".$row['name']."'>accept</a></button>";
+            echo "<button class='btn'><a  class='attri'href='reject.php?val1=".$row['email']."&val2=".$row['name']."'>reject</a></button>";
             
             echo "</div>";
             echo "</div>";
@@ -63,10 +63,7 @@ $conn->close();
 
 ?>
 <style>
-    .num {
-        margin-left: 10px;
-        margin-top: 1px;
-    }
+   
     h2{
         text-align:center;
     }
