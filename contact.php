@@ -9,7 +9,7 @@
                 border: 1px;
                 border-color: none;
                 border-radius: 10px;
-                width:10%;
+                /* width:10%; */
                 padding: 14px 40px;
                 margin-top: 2%;
                 text-align: center;
