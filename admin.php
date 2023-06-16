@@ -174,7 +174,7 @@ display: block;
     x.type = "password";
   }
 }
-function myFunction() {
+function myFunction2() {
   var x = document.getElementById("pass");
   if (x.type === "password") {
     x.type = "text";
@@ -247,7 +247,7 @@ function myFunction() {
              <input id="pass" type="password" name="password" placeholder="Password">
              <br></br>
              <div class="check">
-             <input  id="check"type="checkbox" onclick="myFunction()">Show Password
+             <input  id="check"type="checkbox" onclick="myFunction2()">Show Password
         </div>
              <br></br>
              <button type="submit" name="fetch" id="font1">login</button>
