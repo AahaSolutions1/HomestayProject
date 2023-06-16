@@ -1,5 +1,5 @@
 <?php
-include 'panel.php';
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -51,7 +51,7 @@ $name=$_GET['val2'];
         // Send the email
         $mail->send();
         
-    
+        include 'panel.php';
         echo "<script>";
         echo "alert('Email is sent to $email')";
         echo "</script>";
