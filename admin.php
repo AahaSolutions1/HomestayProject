@@ -181,6 +181,14 @@ function myFunction() {
   } else {
     x.type = "password";
   }
+  function myFunction() {
+           var x = document.getElementById("topnav");
+           if (x.className === "nav") {
+             x.className += " responsive";
+           } else {
+             x.className = "nav";
+           }
+         }
 }
  </script>
     <body>
@@ -207,19 +215,9 @@ function myFunction() {
            <li> <a href="admin.php">Admin</a></li>
          </ul>
        </div>
-       <script>
-         function myFunction() {
-           var x = document.getElementById("topnav");
-           if (x.className === "nav") {
-             x.className += " responsive";
-           } else {
-             x.className = "nav";
-           }
-         }
-       </script> 
 <?php
     require('db.php');
-  
+    session_start();
     if (isset($_POST['email'])) {
         $email = stripslashes($_REQUEST['email']);   
         $email = mysqli_real_escape_string($con, $email);
@@ -232,7 +230,8 @@ function myFunction() {
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['email'] = $email;
-             header("Location:panel.php");
+
+            header("Location: panel.php");
         }
          else {
           ?>

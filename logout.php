@@ -2,6 +2,7 @@
     session_start();
     // Destroy session
     if(session_destroy()) {
-        header("Location: admin.php");
+        // Redirecting To Home Page
+        header("Location: firstpage.html");
     }
 ?>
