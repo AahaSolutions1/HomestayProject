@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <title>ADMIN</title>
+    <head>
     <link rel="icon" href="logo.jpg" type="image/x-icon">
     <meta name="viewport" content="width-device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
     <style>
       body{
     background-color: #c8d6e5;
@@ -182,7 +184,6 @@ function myFunction() {
 }
  </script>
     <body>
-    <div class="navbod">
     <div class="nav" id="topnav">
          <div class="nav-image">
            <div class="logo">
@@ -206,7 +207,16 @@ function myFunction() {
            <li> <a href="admin.php">Admin</a></li>
          </ul>
        </div>
-</div>
+       <script>
+         function myFunction() {
+           var x = document.getElementById("topnav");
+           if (x.className === "nav") {
+             x.className += " responsive";
+           } else {
+             x.className = "nav";
+           }
+         }
+       </script> 
 <?php
     require('db.php');
   
