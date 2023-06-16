@@ -38,7 +38,7 @@ CREATE TABLE `users` (
 -- PASSWORD: arthi111
 
 INSERT INTO `users` (`id`, `email`, `password`, `create_datetime`) VALUES
-(1, 'jegatheswarik2004@gmail.com', '058fba48eb494babdc9bf0e5cead8508', '2023-06-15 15:09:22');
+(1, 'homestayproject14@gmail.com', '058fba48eb494babdc9bf0e5cead8508', '2023-06-15 15:09:22');
 
 --
 -- Indexes for dumped tables
