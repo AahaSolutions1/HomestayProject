@@ -232,8 +232,7 @@ function myFunction() {
         $rows = mysqli_num_rows($result);
         if ($rows == 1) {
             $_SESSION['email'] = $email;
-
-            header("Location:panel.php");
+             header("Location:panel.php");
         }
          else {
           ?>

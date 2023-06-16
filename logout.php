@@ -1,7 +1,7 @@
 <?php
     session_start();
+    // Destroy session
     if(session_destroy()) {
-      
-        header("Location:firstpage.html");
+        header("Location: admin.php");
     }
 ?>
