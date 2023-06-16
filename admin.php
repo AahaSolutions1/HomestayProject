@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <style>
-      body{
+    body{
     background-color: #c8d6e5;
     margin: 0px;
 }
